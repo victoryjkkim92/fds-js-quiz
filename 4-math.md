@@ -2,6 +2,17 @@
 
 양수를 입력받아 이 수를 반지름으로 하는 원의 넓이를 반환하는 함수를 작성하세요.
 
+* 접근방법
+  + 원의 넓이 구하는 공식 
+  + 넓이 = 파이 * 반지름제곱
+
+```js
+function circleWidth(num){
+  return Math.PI*Math.pow(num,2)
+}
+circleWidth(6)
+```
+
 ### 문제 2
 
 두 정수 `min`, `max` 를 입력받아, `min` 이상 `max` 미만인 임의의 정수를 반환하는 함수를 작성하세요.
