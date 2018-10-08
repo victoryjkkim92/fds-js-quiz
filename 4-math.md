@@ -50,6 +50,25 @@ ceilBy5(37);
 
 임의의 HTML 색상 코드를 반환하는 함수를 작성하세요.
 
+* 접근 방법
+
+  + HTML 색상 코드는 16진수 사용하니까 '0123456789abcdef'를 변수의 값으로 선언해주고 Math.random()메소드를 사용하면 된다고 생각함
+  + Math.random()는 Math.ceil()아니면 Math.floor()이랑 짝궁이니까 둘 중 하나 선택해서 사용하기로함
+  + for문으로 6자리만큼 돈 다음 빈 메모리에 추가해줌
+
+```js
+function randomHtmlColor(num){
+  const numberRange = '0123456789abcdef';
+  // 색상표기법 
+  let memory = '#'
+  for(let i = 0; i < 6; i++){
+    memory += numberRange[Math.floor(Math.random()*16)];
+  }
+  return memory;
+}
+randomHtmlColor();
+```
+
 ### 문제 6
 
 양수를 입력받아, 그 수만큼의 길이를 갖는 임의의 문자열을 반환하는 함수를 작성하세요.
