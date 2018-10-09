@@ -23,6 +23,16 @@ max([3, 1, 4, 5, 7]);
 
 문제 2. 배열을 입력받아, 해당 배열에 들어있는 요소들 중 최대값을 찾는 함수를 작성하세요. (`Array.prototype.reduce`를 이용하세요)
 
+```js
+function maxNum(arr) {
+  // 매개변수로 acc, item이 들어오고 => 조건문 acc 가 item 보다 크면
+  // true일때 acc 반환, false일때 item 반환
+  return arr.reduce((acc, item) => acc > item ? acc : item, -Infinity)
+  // 배열 안에 음수가 오는 것을 대비 -> 0보다 더 작은  -Infinity를 사용하는 것을 추천!
+}
+
+maxNum([2, -3, 4, 167, 7]) // 167
+```
 ---
 
 문제 3. 2차원 배열을 입력받아 1차원 배열로 바꾸는 함수를 작성하세요. (루프를 이용하세요)
