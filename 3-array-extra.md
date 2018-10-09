@@ -125,6 +125,13 @@ omok([
 
 문제 7. 배열을 입력받아, 요소 중 아무거나 하나를 골라서 반환하는 함수를 작성하세요.
 
+```js
+function randomItem(arr) {
+  return arr[Math.floor(Math.random()* arr.length)]
+}
+randomItem([13, 2, 3, 10, 5]);
+```
+
 예:
 
 ```js
