@@ -103,6 +103,30 @@ function sameLengthWord(num){
 sameLengthWord(20);
 ```
 
+선생님 풀이
+
+```js
+function randomString(n) {
+  const candidate = '1234567890!@#$%^&*()abcdefg'
+  let result = ''
+  for (let i = 0; i < n; i++) {
+    const randomIndex = Math.floor(Math.random() * candidate.length)
+    result += candidate[randomIndex]
+  }
+  return result
+}
+```
+
+```js
+function randomString(n) {
+  let result = ''
+  for (let i = 0; i < n; i++) {
+    result += String.fromCodePoint(Math.floor(Math.random() * 65536))
+  }
+  return result
+}
+```
+
 ### 문제 7
 
 수 타입의 값으로만 이루어진 배열을 입력받아, 그 값들의 표준편차를 구하는 함수를 작성하세요.
