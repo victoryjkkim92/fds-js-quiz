@@ -81,6 +81,30 @@ function randomHtmlColor(num){
 randomHtmlColor();
 ```
 
+선생님 코드
+
+```js
+function randomColor() {
+  const candidate = '0123456789ABCDEF'
+  let color = '#'
+  for (let i = 0; i < 6; i++) {
+    const randomIndex = Math.floor(candidate.length * Math.random())
+    color += candidate[randomIndex]
+  }
+  return color
+}
+randomColor()
+```
+
+```js
+function randomColor() {
+  const r = Math.floor(Math.random() * 256)
+  const g = Math.floor(Math.random() * 256)
+  const b = Math.floor(Math.random() * 256)
+  return `rgb(${r},${g},${b})`
+}
+```
+
 ### 문제 6
 
 양수를 입력받아, 그 수만큼의 길이를 갖는 임의의 문자열을 반환하는 함수를 작성하세요.
