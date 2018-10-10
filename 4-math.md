@@ -70,7 +70,7 @@ ceilBy5(37);
 
 ```js
 function randomHtmlColor(num){
-  const numberRange = '0123456789abcdef';
+  const numberRange = '0123456789ABCDEF';
   // 색상표기법 
   let memory = '#'
   for(let i = 0; i < 6; i++){
