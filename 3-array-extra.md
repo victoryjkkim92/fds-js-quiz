@@ -51,6 +51,14 @@ flatten([
 
 문제 4. 2차원 배열을 입력받아 1차원 배열로 바꾸는 함수를 작성하세요. (`Array.prototype.reduce`를 이용하세요)
 
+
+```js
+function flatten(arr) {
+  // 누적값 : 지금까지 본 배열이 다 이어붙여진 새 배열
+  return arr.reduce((acc, innerArr) => acc.concat(innerArr), [])
+}
+```
+
 ---
 
 문제 5. (3 * 3) 빙고 판을 표현한 배열을 입력받아, 빙고인 경우 `true`, 아니면 `false`를 반환하는 함수를 작성하세요. (단, 칸이 비어있는 경우는 0, 칸이 채워져 있는 경우는 1로 표현합니다.)
