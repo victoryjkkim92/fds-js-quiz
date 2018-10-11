@@ -65,6 +65,8 @@ function flatten(arr) {
 
 문제 5. (3 * 3) 빙고 판을 표현한 배열을 입력받아, 빙고인 경우 `true`, 아니면 `false`를 반환하는 함수를 작성하세요. (단, 칸이 비어있는 경우는 0, 칸이 채워져 있는 경우는 1로 표현합니다.)
 
+[문제풀이 링크](https://repl.it/@victoryjkkim92/bingogame)
+
 예:
 
 ```js
