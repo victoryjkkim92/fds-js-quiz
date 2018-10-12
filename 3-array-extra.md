@@ -58,6 +58,7 @@ flatten([
 function flatten(arr) {
   // 누적값 : 지금까지 본 배열이 다 이어붙여진 새 배열
   return arr.reduce((acc, innerArr) => acc.concat(innerArr), [])
+  //return arr.reduce((acc, item) => [...acc, ...item], []) : Spread Syntax 
 }
 ```
 
