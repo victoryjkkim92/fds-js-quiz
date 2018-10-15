@@ -88,6 +88,16 @@ function removeDuplicates(arr){
 removeDuplicates(['hello','world','hello', 'great'])
 ```
 
+* set을 사용하는 방법
+
+```js
+function removeDuplicates(arr){
+  const set = new Set(arr)
+  return Array.from(set)
+}
+removeDuplicates([1,2,3,2,1])
+```
+
 
 ### 문제 5
 
