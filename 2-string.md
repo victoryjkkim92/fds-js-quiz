@@ -66,6 +66,18 @@ function leftPad(s,n){
 leftPad('aha',5); // 반환값 : '  aha'
 ```
 
+```js
+function leftPad(s, n) {
+  if (s.length < n) {
+    const empty = n-s.length
+    return s.padStart(n,' ')
+  } else {
+    return s
+  }
+}
+leftPad('hello', 12) // '       hello'
+```
+
 
 ### 문제 3
 
