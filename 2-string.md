@@ -498,6 +498,20 @@ toSnakeCase('fooBar');
 
 Snake case의 문자열을 입력받아, camel case로 바꾼 새 문자열을 반환하는 함수를 작성하세요.
 
+```js
+function toCamelCase(str) {
+  newStr = ''
+  for (let i = 0; i < str.length; i++) {
+    if(str[i] === '_' ){
+      newStr += str[++i].toUpperCase()
+    } else{
+      newStr += str[i]
+    }
+  }
+  return newStr
+}
+toCamelCase('snake_case')
+```
 
 
 ### 문제 15
