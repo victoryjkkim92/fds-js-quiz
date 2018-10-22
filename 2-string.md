@@ -167,6 +167,19 @@ isPalirome('이렇게 접근해야겠다고 생각하는게 어려워')
 subString('햄버거');
 // 결과: ['햄', '햄버', '햄버거', '버', '버거', '거']
 ```
+```js
+function subString(str){
+  let subWord = new Array()
+  let cnt = 0
+  for(let i = 0; i<str.length; i++){
+    for(let j = i+1; j<=str.length; j++){
+      subWord[cnt++] = str.slice(i,j);
+    }
+  }
+  return subWord
+}
+subString('카페라떼')
+```
 
 ### 문제 7
 
