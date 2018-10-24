@@ -576,6 +576,17 @@ split('Hello,First,World', ',');
 convertBinary('1101'); -> 13
 ```
 
+```js
+// parseInt 사용
+
+function convertBinary(str){
+  return parseInt(str,2)
+}
+
+convertBinary('1101')
+
+```
+
 ### 문제 17
 
 숫자로만 이루어진 문자열을 입력받아, 연속된 두 짝수 사이에 하이픈(-)을 끼워넣은 문자열을 반환하는 함수를 작성하세요.
